@@ -9,6 +9,7 @@
   transition: transform 0.3s ease;
 
 
+
   .bg{
     position: fixed;
     top: 0;
@@ -16,6 +17,7 @@
     bottom: 0;
     width: 400px;
     background-color: white;
+    z-index: 100;
 
     .links{
       font-size: 50px;
@@ -42,6 +44,7 @@
     background-color: transparent;
     border: none;
     color: black;
+    z-index: 150;
 
     img{
       padding:10px

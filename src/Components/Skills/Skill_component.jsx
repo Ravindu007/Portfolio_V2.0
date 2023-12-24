@@ -15,7 +15,7 @@ const Skill_component = ({Techs:frontendTechs, variants, techStack}) => {
                 {tech.name}
               </motion.div> 
             : 
-              <motion.div variants={variants} initial="initialRight" whileInView="animateRight" className='col-span-2 flex flex-col items-center justify-center'>
+              <motion.div variants={variants} initial="initialRight" whileInView="animateRight" drag className='col-span-2 flex flex-col items-center justify-center'>
                  <img src={tech.img} alt="" width={70}/>
                 {tech.name}
               </motion.div>             
