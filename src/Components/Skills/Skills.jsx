@@ -35,14 +35,14 @@ const Skills = () => {
 
   const variants = {
     initialLeft:{
-      x:"-100%",
+      x:"-200%",
       opacity:0
     },
     animateLeft:{
       x:0,
       opacity:1,
       transition:{
-        duration:0.2
+        duration:0.5
       }, 
     },
     initialRight:{
@@ -53,7 +53,7 @@ const Skills = () => {
       x:0,
       opacity:1,
       transition:{
-        duration:0.2
+        duration:0.5
       }, 
     },
 

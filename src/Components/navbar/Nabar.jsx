@@ -27,7 +27,7 @@ const Nabar = () => {
           transition={{duration:0.5}}
           whileInView={{opacity:1, scale:1}}
         >Ravindu</motion.span>
-        <div className="social">
+        <div className="social pl-16 md:pl-0">
           <a href=""><img src="./icons/linkedIn.png" alt="" /></a>
           <a href=""><img src="./icons/github.png" alt="" /></a>
           <a href=""><img src="./icons/fb.png" alt="" /></a>
