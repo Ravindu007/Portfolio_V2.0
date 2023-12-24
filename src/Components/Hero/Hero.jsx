@@ -4,11 +4,11 @@ import {motion} from "framer-motion"
 
 const imageVariants = {
   initial:{
-    x:100
+    y:350
   },
   visible:{
-    x:4,
-    transition:{duration:0.2}
+    y:0,
+    transition:{duration:0.3}
   }
 }
 
@@ -76,7 +76,7 @@ const Hero = () => {
 
           {/* image */}
           <motion.div 
-            className="img-container relative hidden md:block md:absolute md:bottom-1 md:right-0"
+            className="img-container relative hidden md:block md:absolute md:bottom-1 md:right-0 py-4"
             variants={imageVariants}
             initial="initial"
             whileInView="visible"

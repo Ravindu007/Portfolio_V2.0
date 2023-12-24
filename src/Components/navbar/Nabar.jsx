@@ -22,6 +22,7 @@ const Nabar = () => {
       <Sidebar open={open} setOpen={setOpen} initialLoad={initialLoad} />
       <div className="wrapper px-10">
         <motion.span
+          className='hidden md:block'
           initial={{opacity:0, scale:1}}
           transition={{duration:0.5}}
           whileInView={{opacity:1, scale:1}}
