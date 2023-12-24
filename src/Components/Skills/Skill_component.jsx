@@ -4,8 +4,8 @@ import {motion} from 'framer-motion'
 
 const Skill_component = ({Techs:frontendTechs, variants, techStack}) => {
   return (
-    <div className="col-span-4 md:col-span-1">
-    <h1 className='text-4xl flex justify-center py-4'>{techStack}</h1>
+    <div className="col-span-4 md:col-span-1 px-10">
+    <h1 className='text-4xl flex justify-start py-4'>{techStack}</h1>
       {frontendTechs.map((tech)=>(
         <div className="grid grid-cols-2">
           {tech.id % 2 == 0 

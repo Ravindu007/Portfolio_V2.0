@@ -35,7 +35,7 @@ const Skills = () => {
 
   const variants = {
     initialLeft:{
-      x:"-200%",
+      x:"-20%",
       opacity:0
     },
     animateLeft:{
