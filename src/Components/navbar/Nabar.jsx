@@ -1,11 +1,25 @@
 import {motion} from 'framer-motion'
 import './Navbar.scss'
 import Sidebar from '../sidebar/Sidebar'
+import { useEffect, useState } from 'react'
 
 const Nabar = () => {
+  const [open, setOpen] = useState(false)
+
+  const [initialLoad, setInitialLoad] = useState(true);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setInitialLoad(false);
+    }, 200); // Adjust the delay as needed
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+
   return (
     <div className='navbar'>
-      <Sidebar/>
+      <Sidebar open={open} setOpen={setOpen} initialLoad={initialLoad} />
       <div className="wrapper px-10">
         <motion.span
           initial={{opacity:0, scale:1}}

@@ -1,14 +1,10 @@
-import { useState } from 'react'
 import Links from './Links/Links'
-import ToggleButton from './button/ToggleButton'
 import './sidebar.scss'
 import {motion} from 'framer-motion'
 
-const Sidebar = () => {
+  const Sidebar = ({open, setOpen, initialLoad}) => {
 
-
-  const [open, setOpen] = useState(false)
-
+  const sidebarClass = initialLoad ? 'sidebar-hidden' : '';
 
   const variants = {
     open:{
@@ -27,22 +23,33 @@ const Sidebar = () => {
         type:"spring",
         stiffness:800,
         damping:40
-      }
-    }
+      },
+    },
   }
 
   return (
     <motion.div 
-      className='sidebar'
+      className= {`sidebar bg-white ${sidebarClass}`}
       animate = {open ? "open" : "closed"}
     >
       <motion.div 
-        className="bg"
+         className="bg"
          variants={variants}
       >
         <Links open={open}/>
       </motion.div>
-      <ToggleButton setOpen={setOpen} open={open}/>
+
+      {/* toggle button */}
+      <button 
+          onClick={()=> setOpen( prev => !prev)}
+        >
+          {
+          open 
+            ? 
+          <img src="./icons/close.svg"/>
+            :  
+          <img  src='./icons/open.svg'/>}
+        </button>
     </motion.div>
   )
 }

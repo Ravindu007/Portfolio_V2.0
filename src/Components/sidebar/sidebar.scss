@@ -6,6 +6,7 @@
   justify-content: center;
   background-color: white;
   color: black;
+  transition: transform 0.3s ease;
 
 
   .bg{
@@ -48,4 +49,8 @@
   }
 
 
+}
+
+.sidebar-hidden {
+  transform: translateX(-100%);
 }

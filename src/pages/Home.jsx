@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.scss"
-import Hero from '../Components/Hero'
-import Parralax from '../Components/Parralax'
+import Hero from '../Components/Hero/Hero'
+import Parralax from '../Components/Parallax/Parralax'
 
 
 const Home = () => {
