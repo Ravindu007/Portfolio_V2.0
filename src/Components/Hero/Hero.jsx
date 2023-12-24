@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from '../navbar/Nabar'
 import {motion} from "framer-motion"
+import TextAnimation from './textAnimation/TextAnimation'
 
 const imageVariants = {
   initial:{
-    y:350
+    x:100
   },
   visible:{
-    y:0,
+    x:0,
     transition:{duration:0.3}
   }
 }
@@ -46,14 +47,16 @@ const Hero = () => {
             Hi! I am Ravindu Dharmadasa
           </motion.div>
           <motion.div variants={textVariants} className="career text-6xl font-bold">
-            Full stack developer
+            <TextAnimation/>
           </motion.div>
           <motion.div variants={textVariants} className="desc">
             <p>Passionate, adaptable learner with expertise in Object-Oriented Programming, Data Structures, and Algorithms. Dedicated to agile project collaboration and committed to delivering quality results. Actively seeks growth opportunities.</p>
           </motion.div>
           <motion.div variants={textVariants} className="button-section flex gap-2">
-            <motion.button variants={textVariants} className='styleBtn'>Scroll</motion.button>
             <motion.button variants={textVariants} className='styleBtn'>Contact</motion.button>
+            <motion.button variants={textVariants} className=''>
+              <img src="./icons/scroll.svg" alt=""  width={50}/>
+            </motion.button>
           </motion.div>
         </motion.div>
         
@@ -61,7 +64,7 @@ const Hero = () => {
         <div className="img-section  md:col-span-1  mt-10 md:mt-0 relative ">
 
           {/* LOGOS */}
-          <div className="logo-section hidden md:block opacity-[0.6]">
+          {/* <div className="logo-section hidden md:block opacity-[0.6]">
             <img src="./programming/js.svg" alt="" width={75} className=' absolute top-[40%] left-[28%]'/>
             <img src="./programming/react.svg" alt="" width={75} className=' absolute top-[20%] left-[18%]'/>
             <img src="./programming/angular.svg" alt="" width={75} className=' absolute top-[10%] left-[41%]'/>
@@ -72,11 +75,11 @@ const Hero = () => {
             <img src="./programming/java.svg" alt="" width={75} className=' absolute top-[87%] left-[84%]'/>
             <img src="./programming/mysql.svg" alt="" width={75} className=' absolute top-[77%] left-[14%]'/>
             <img src="./programming/git.svg" alt="" width={75} className=' absolute top-[55%] left-[14%]'/>
-          </div>
+          </div> */}
 
           {/* image */}
           <motion.div 
-            className="img-container relative hidden md:block md:absolute md:bottom-1 md:right-0 py-4"
+            className="img-container relative hidden md:block md:absolute md:bottom-1 md:right-0 py-6"
             variants={imageVariants}
             initial="initial"
             whileInView="visible"

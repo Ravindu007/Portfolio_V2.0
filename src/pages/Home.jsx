@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.scss"
 import Hero from '../Components/Hero/Hero'
-import Parralax from '../Components/Parallax/Parralax'
+import Skills from '../Components/Skills/Skills'
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
         <Hero/>
       </div>
       <div className="section">
-        <Parralax/>
+        <Skills/>
       </div>
     </div>
   )
