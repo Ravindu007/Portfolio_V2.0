@@ -3,16 +3,16 @@ import "./Home.scss"
 import Hero from '../Components/Hero'
 import Parralax from '../Components/Parralax'
 
+
 const Home = () => {
   return (
-    <div>
+    <div className='px-20'>
       <div className="section">
         <Hero/>
       </div>
       <div className="section">
         <Parralax/>
       </div>
-      
     </div>
   )
 }
