@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Card, Modal } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
 
@@ -18,16 +18,16 @@ const ProjectCard = ({project, variants}) => {
 
   const ModalVariants = {
     initial: {
-      opacity: 0,
-      clipPath: "circle(30px at 50px 50px)"
+      opacity: 0.2,
+      clipPath: "circle(30px at 50px 50px)",
     },
     animate: {
       opacity: 1,
       clipPath: "circle(100% at 50% 50%)",
       transition: {
         type:"spring",
-        stiffness:100,
-        damping:25
+        stiffness:1000,
+        damping:250
       }
     }
   }
@@ -44,7 +44,14 @@ const ProjectCard = ({project, variants}) => {
           animate="animate"
           >
             <h1>{project.name}</h1>
-            <img src={project.img} alt="" />
+            <div className="grid grid-cols-2">
+              <div className="col-span-1">
+                <img src={project.img} alt="" />
+              </div>
+              <div className="col-span-1 px-5">
+                <p>{project.desc}</p>
+              </div>
+            </div>
             <button className='styleBtn' onClick={()=>{setShowModal(false)}}>Close</button>
           </motion.div>
         )}
@@ -58,14 +65,11 @@ const ProjectCard = ({project, variants}) => {
             <Card.Img src={project.img} className="md:min-h-28 md:max-h-28 md:min-w-52 md:max-w-52" />
             </Card.Body>
           <Card.Footer className="flex gap-3 items-center">
-            {project.desc}
             <img src="./icons/link.png" alt="" width={15} />
-          </Card.Footer>
-            <Card.Footer>
-              <button className="styleBtn" onClick={() => setShowModal(true)}>
-                Click
+            <button className="styleBtn" onClick={() => setShowModal(true)}>
+                VIEW
               </button>
-            </Card.Footer>
+          </Card.Footer>
           </motion.Card> 
 
       </div>
