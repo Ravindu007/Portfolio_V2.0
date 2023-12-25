@@ -78,15 +78,15 @@ const Hero = () => {
         </motion.div>
         
         {/* image section + logos */}
-        <div className="img-section  md:col-span-1  mt-10 md:mt-0 md:mb-20 mr-10 relative ">
+        <div className="img-section md:col-span-1  mt-10 md:mt-0 md:mb-20 mr-10 relative ">
           {/* image */}
           <motion.div 
-            className="img-container relative hidden md:block md:absolute md:bottom-1 md:right-0 py-6"
+            className="img-container flex justify-center relative md:block md:absolute md:bottom-1 md:right-0 py-6"
             variants={imageVariants}
             initial="initial"
             whileInView="visible"
           > 
-            <div className="bg-img">
+            <div className="bg-img w-2/3 md:w-full flex justify-center">
               <img src="./hero/hero3.png" alt="" />
            </div>
           </motion.div>

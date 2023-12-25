@@ -20,7 +20,7 @@ const Nabar = () => {
   return (
     <div className='navbar'>
       <Sidebar open={open} setOpen={setOpen} initialLoad={initialLoad} />
-      <div className="wrapper px-10">
+      <div className="wrapper px-16">
         <motion.span
           className='hidden md:block'
           initial={{opacity:0, scale:1}}
