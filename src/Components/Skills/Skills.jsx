@@ -46,7 +46,7 @@ const Skills = () => {
       }, 
     },
     initialRight:{
-      x:"100%",
+      x:"10%",
       opacity:0
     },
     animateRight:{
