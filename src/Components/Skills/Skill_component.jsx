@@ -10,12 +10,12 @@ const Skill_component = ({Techs:frontendTechs, variants, techStack}) => {
         <div className="grid grid-cols-2">
           {tech.id % 2 == 0 
             ? 
-              <motion.div variants={variants} initial="initialLeft" whileInView="animateLeft" className='col-span-1flex flex-col items-center'>
+              <motion.div variants={variants} initial="initialLeft" whileInView="animateLeft" className='col-span-1 flex flex-col items-center'>
                 <img src={tech.img} alt="" width={70}/>
                 {tech.name}
               </motion.div> 
             : 
-              <motion.div variants={variants} initial="initialRight" whileInView="animateRight" className='col-span-2 flex flex-col items-center justify-center'>
+              <motion.div variants={variants} initial="initialRight" whileInView="animateRight" className='col-span-2 flex flex-col items-end justify-center'>
                  <img src={tech.img} alt="" width={70}/>
                 {tech.name}
               </motion.div>             
