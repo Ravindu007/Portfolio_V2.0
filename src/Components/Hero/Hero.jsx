@@ -86,7 +86,7 @@ const Hero = () => {
             initial="initial"
             whileInView="visible"
           > 
-            <div className="bg-img w-2/3 md:w-full flex justify-center">
+            <div className="bg-img w-2/3 md:mt-16 md:w-full flex justify-center">
               <img src="./hero/hero3.png" alt="" />
            </div>
           </motion.div>
