@@ -33,7 +33,7 @@ const cardVariants = {
     transition:{
       type:"spring",
       stiffness:600,
-      damping:10
+      damping:25
     }
   }
 }
