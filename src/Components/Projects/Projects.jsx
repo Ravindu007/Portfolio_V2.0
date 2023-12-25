@@ -68,7 +68,7 @@ const Projects = () => {
   };
 
   return (
-      <motion.div className="grid grid-cols-3 mx-0 mt-16 md:mt-20 py-20 w-full"  variants={variants} initial="initial" whileInView="animate">
+      <motion.div className="grid grid-cols-3 mx-0 mt-16 md:mt-20 pt-20 pb-0 w-full"  variants={variants} initial="initial" whileInView="animate">
 
         {projects.map((project) => (
           // column

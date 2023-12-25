@@ -3,6 +3,7 @@ import "./Home.scss"
 import Hero from '../Components/Hero/Hero'
 import Skills from '../Components/Skills/Skills'
 import Projects from '../Components/Projects/Projects'
+import Education from '../Components/Education/Education'
 
 
 const Home = () => {
@@ -16,6 +17,9 @@ const Home = () => {
       </div>
       <div className="section">
         <Projects/>
+      </div>
+      <div className="section">
+        <Education/>
       </div>
     </div>
   )
