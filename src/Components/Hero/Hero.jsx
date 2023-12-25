@@ -78,7 +78,7 @@ const Hero = () => {
         </motion.div>
         
         {/* image section + logos */}
-        <div className="img-section md:col-span-1  mt-10 md:mt-0 md:mb-20 mr-10 relative ">
+        <div className="img-section md:col-span-1  mt-10 md:mt-0 md:mb-20 relative mr-1">
           {/* image */}
           <motion.div 
             className="img-container flex justify-center relative md:block md:absolute md:bottom-1 md:right-0 py-6"
