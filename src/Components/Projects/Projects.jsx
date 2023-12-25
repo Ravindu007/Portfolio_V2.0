@@ -5,12 +5,51 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
   const [projects, setProjects] = useState([
-    { id: 1, name: 'Project 1', desc: 'How I have built this', img: './projects/pr2.png', github: '' },
-    { id: 2, name: 'Project 2', desc: 'How I have built this', img: './projects/pr2.png', github: '' },
-    { id: 3, name: 'Project 3', desc: 'How I have built this', img: './projects/pr3.png', github: '' },
-    { id: 4, name: 'Project 3', desc: 'How I have built this', img: './projects/pr3.png', github: '' },
-    { id: 5, name: 'Project 3', desc: 'How I have built this', img: './projects/pr3.png', github: '' },
-    { id: 6, name: 'Project 3', desc: 'How I have built this', img: './projects/pr3.png', github: '' },
+
+    { id: 1, name: 'Easy Proof', desc: 'A web application that ensures the authenticity of a product by saving product details in a blockchain and allowing QR scan functionality to check authenticity', img: './projects/pr2.png', techsUsed:[
+      {id:1, techName:"ASP.NET", logo:"./programming/csharp.svg"},
+      {id:2, techName:"Angular", logo:"./programming/angular.svg"},
+      {id:3, techName:"MySQL", logo:"./programming/mysql.svg"},
+      {id:4, techName:"Git", logo:"./programming/git.svg"},
+    ], github: '' },
+
+
+    { id: 2, name: 'Employee Management System', desc: 'A platform that allows a human resource department to manage their employees in the company', img: './projects/pr2.png', techsUsed:[
+      {id:1, techName:"ASP.NET", logo:"./programming/csharp.svg"},
+      {id:2, techName:"Angular", logo:"./programming/angular.svg"},
+      {id:3, techName:"MySQL", logo:"./programming/mysql.svg"},
+      {id:4, techName:"Git", logo:"./programming/git.svg"},
+    ], github: '' },
+
+
+    { id: 3, name: 'Learning Management System', desc: 'A platform that allows managing academic tasks for students and teachers controlled with a secure admin panel.', img: './projects/pr2.png', techsUsed:[
+      {id:1, techName:"React", logo:"./programming/react.svg"},
+      {id:2, techName:"Node.js", logo:"./programming/node.svg"},
+      {id:3, techName:"Express.js", logo:"./programming/express.svg"},
+      {id:4, techName:"MongoDB", logo:"./programming/mongodb.svg"},
+      {id:5, techName:"Git", logo:"./programming/git.svg"},
+    ], github: '' },
+
+    { id: 4, name: 'Reservation Web Application', desc: 'A hotel reservation web application that allows users to manage reservations', img: './projects/pr2.png', techsUsed:[
+      {id:1, techName:"React", logo:"./programming/react.svg"},
+      {id:2, techName:"Node.js", logo:"./programming/node.svg"},
+      {id:3, techName:"Express.js", logo:"./programming/express.svg"},
+      {id:4, techName:"MongoDB", logo:"./programming/mongodb.svg"},
+      {id:5, techName:"Git", logo:"./programming/git.svg"},
+    ], github: '' },
+
+
+    { id: 5, name: 'GPA Calculator', desc: 'A web application that allow undergraduates to add their academic marks and view their current GPA', img: './projects/pr2.png', techsUsed:[
+      {id:1, techName:"React", logo:"./programming/react.svg"},
+      {id:2, techName:"Node.js", logo:"./programming/node.svg"},
+      {id:3, techName:"Express.js", logo:"./programming/express.svg"},
+      {id:4, techName:"MongoDB", logo:"./programming/mongodb.svg"},
+      {id:5, techName:"Git", logo:"./programming/git.svg"},
+    ], github: '' },
+
+    
+
+    
   ]);
 
   const variants = {

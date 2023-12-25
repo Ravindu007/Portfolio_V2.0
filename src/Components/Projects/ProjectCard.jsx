@@ -32,6 +32,22 @@ const ProjectCard = ({project, variants}) => {
     }
   }
 
+  const techLogoVariants = {
+    initial:{
+      opacity:0,
+      y:-10
+    },
+    animate:{
+      opacity:1,
+      y:0,
+      transition:{
+        type:"spring",
+        stiffness:200,
+        staggerChildren:0.3
+      }
+    }
+  }
+
   return (
       <>
         
@@ -45,11 +61,25 @@ const ProjectCard = ({project, variants}) => {
           >
             <h1>{project.name}</h1>
             <div className="grid grid-cols-2">
-              <div className="col-span-1">
+              <div className="col-span-2 md:col-span-1">
                 <img src={project.img} alt="" />
               </div>
-              <div className="col-span-1 px-5">
+              <div className="col-span-2 md:col-span-1 px-5">
                 <p>{project.desc}</p>
+                <motion.div className="tech-stack flex gap-4" 
+                  variants={techLogoVariants}
+                  initial="initial"
+                  animate="animate"
+                >
+                <div className="wrapper flex">
+                {project.techsUsed.map((tech)=>(
+                  <motion.div className="tech flex flex-col items-center" key={tech.id} variants={techLogoVariants}>
+                    <p>{tech.techName}</p>
+                    <img src={tech.logo} alt="" width={40}/>
+                  </motion.div>
+                ))}
+                </div>
+                </motion.div>
               </div>
             </div>
             <button className='styleBtn' onClick={()=>{setShowModal(false)}}>Close</button>
@@ -60,7 +90,7 @@ const ProjectCard = ({project, variants}) => {
 
       <div className='px-5 py-4 w-4/5'>
         <motion.Card variants={variants} className="bg-inherit rounded-lg shadow-md shadow-primary flex flex-col items-center justify-center md:gap-1 py-4 my-4 hover:bg-gradient-to-b from-primary  hover:text-black ease-in duration-200">
-          <Card.Header>{project.name}</Card.Header>
+          <Card.Header className='text-xl font-semibold'>{project.name}</Card.Header>
           <Card.Body>
             <Card.Img src={project.img} className="md:min-h-28 md:max-h-28 md:min-w-52 md:max-w-52" />
             </Card.Body>
