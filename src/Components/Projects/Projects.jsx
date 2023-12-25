@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import { motion } from 'framer-motion';
 
 
 const Projects = () => {
@@ -21,19 +22,15 @@ const Projects = () => {
       opacity: 1,
       y: -60,
       transition: {
-        duration:0.1
+        duration:0.3,
+        staggerChildren:0.1
       },
     },
   };
 
-
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
-      <div className="grid grid-cols-3 mx-0 mt-16 md:mt-20 py-20">
+      <motion.div className="grid grid-cols-3 mx-0 mt-16 md:mt-20 py-20 w-full"  variants={variants} initial="initial" whileInView="animate">
+
         {projects.map((project) => (
           // column
           <div key={project.id} className="col-span-3 md:col-span-1 flex justify-center">
@@ -42,7 +39,7 @@ const Projects = () => {
           </div>
         ))}
 
-      </div>
+      </motion.div>
   );
 };
 
