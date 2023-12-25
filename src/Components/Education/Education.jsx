@@ -51,6 +51,7 @@ const Education = () => {
         {education.map((institute)=>(
         <div className="col-span-2 md:col-span-1 flex justify-center">
 
+            {/* Edication card */}
             <motion.div className="card box-border bg-white text-black shadow-sm shadow-gray-400 w-4/5 h-auto rounded-md flex justify-center" variants={cardVariants} initial="leftinitialCard" whileInView="leftanimateCard">
 
               {/* text */}
@@ -65,6 +66,7 @@ const Education = () => {
               </div>
             
             </motion.div>  
+
          </div>
         ))}
 
