@@ -5,6 +5,7 @@ import Skills from '../Components/Skills/Skills'
 import Projects from '../Components/Projects/Projects'
 import Education from '../Components/Education/Education'
 import Certiificates from '../Components/Certificats/Certiificates'
+import Services from '../Components/Services/Services'
 
 
 const Home = () => {
@@ -24,6 +25,9 @@ const Home = () => {
       </div>
       <div className="section">
         <Certiificates/>
+      </div>
+      <div className="section">
+        <Services/>
       </div>
     </div>
   )
