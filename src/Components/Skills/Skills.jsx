@@ -59,7 +59,7 @@ const Skills = () => {
 
   }
   return (
-      <div className="grid grid-cols-4 h-full -z-50 border-2 border-yellow-300 ">
+      <div className="grid grid-cols-4 h-full -z-50">
 
       {/* frontend */}
       <Skill_component techStack="Front End" Techs={frontendTechs} variants={variants}/>
