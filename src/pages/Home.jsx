@@ -6,6 +6,7 @@ import Projects from '../Components/Projects/Projects'
 import Education from '../Components/Education/Education'
 import Certiificates from '../Components/Certificats/Certiificates'
 import Services from '../Components/Services/Services'
+import Contact from '../Components/Contact/Contact'
 
 
 const Home = () => {
@@ -28,6 +29,9 @@ const Home = () => {
       </div>
       <div className="section">
         <Services/>
+      </div>
+      <div className="section">
+        <Contact/>
       </div>
     </div>
   )
