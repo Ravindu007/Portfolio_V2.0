@@ -81,10 +81,10 @@ const Hero = () => {
             <TextAnimation/>
           </motion.div>
           <div className="badges flex gap-2" variants={badgeVariants}>
-            <motion.div initial="initial" animate="animate" variants={badgeVariants} className="badge rounded-md bg-pink-300 text-black px-2 py-1">Full-stack</motion.div>
-            <motion.div initial="initial" animate="animate" variants={badgeVariants} className="badge rounded-md bg-blue-300 text-black px-2 py-1">Frontend</motion.div>
-            <motion.div initial="initial" animate="animate" variants={badgeVariants} className="badge rounded-md bg-green-300 text-black px-2 py-1">Backend</motion.div>
-            <motion.div initial="initial" animate="animate" variants={badgeVariants} className="badge rounded-md bg-yellow-300 text-black px-2 py-1">Web Development</motion.div>
+            <div className="badge rounded-md bg-pink-300 text-black px-2 py-1">Full-stack</div>
+            <div className="badge rounded-md bg-blue-300 text-black px-2 py-1">Frontend</div>
+            <div className="badge rounded-md bg-green-300 text-black px-2 py-1">Backend</div>
+            <div className="badge rounded-md bg-yellow-300 text-black px-2 py-1">Web Development</div>
           </div>
         </motion.div>
         
