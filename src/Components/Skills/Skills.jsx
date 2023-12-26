@@ -35,7 +35,7 @@ const Skills = () => {
 
   const variants = {
     initialLeft:{
-      x:"-20%",
+      x:"-40%",
       opacity:0
     },
     animateLeft:{
@@ -46,7 +46,7 @@ const Skills = () => {
       }, 
     },
     initialRight:{
-      x:"10%",
+      x:"40%",
       opacity:0
     },
     animateRight:{
@@ -59,20 +59,26 @@ const Skills = () => {
 
   }
   return (
-      <div className="grid grid-cols-4 h-full -z-50">
+      <div className="skills">
 
-      {/* frontend */}
-      <Skill_component techStack="Front End" Techs={frontendTechs} variants={variants}/>
+        <div className="row flex justify-center text-4xl font-bold tracking-widest underline underline-offset-8 mb-4">
+          <h1>Expertise</h1>
+        </div>
+        <div className="grid grid-cols-4 h-full -z-50">
+      
+        {/* frontend */}
+        <Skill_component techStack="Front End" Techs={frontendTechs} variants={variants}/>
 
-      {/* backend technologies */}
-      <Skill_component techStack="Back end" Techs={backendTechs} variants={variants}/>
+        {/* backend technologies */}
+        <Skill_component techStack="Back End" Techs={backendTechs} variants={variants}/>
 
-       {/* Programming Languages */}
-       <Skill_component techStack="Languages" Techs={programingLanguages} variants={variants}/>
+        {/* Programming Languages */}
+        <Skill_component techStack="Languages" Techs={programingLanguages} variants={variants}/>
 
-      {/* Programming Languages */}
-      <Skill_component techStack="DBs & Tools" Techs={tools} variants={variants}/>
+        {/* Programming Languages */}
+        <Skill_component techStack="DBs & Tools" Techs={tools} variants={variants}/>
 
+        </div>
       </div>
   )
 }

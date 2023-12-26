@@ -3,10 +3,12 @@ import {motion} from 'framer-motion'
 
 const Links = ({open}) => {
   const [items, setItems] = useState([
-    {id:1, name:"Hero"},
-    {id:2, name:"Projects"},
-    {id:3, name:"Services"},
-    {id:4, name:"Contact"},
+    {id:1, name:"Hero",link:"hero"},
+    {id:2, name:"Expertise",link:"skills"},
+    {id:3, name:"Projects",link:"projects"},
+    {id:4, name:"Education",link:"education"},
+    {id:5, name:"Services",link:"services"},
+    {id:6, name:"Contact",link:"contact"},
   ])
 
 
@@ -27,7 +29,7 @@ const Links = ({open}) => {
       animate={open? "visible": "hidden"}
     >
       {items.map((item)=>(
-        <motion.a whileHover={{scale:1.1}} whileTap={{scale:0.95}} key={item} href={`#${item.name}`}>{item.name}</motion.a>
+        <motion.a whileHover={{scale:1.1}} whileTap={{scale:0.95}} key={item} href={`#${item.link}`}>{item.name}</motion.a>
       ))}
     </motion.div>
   )

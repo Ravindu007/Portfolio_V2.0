@@ -45,6 +45,20 @@ const textVariants= {
   }
 }
 
+const badgeVariants = {
+  initial:{
+    scale:0.8
+  },
+  animate:{
+    scale:1,
+    transition:{
+      repeat:"Infinity",
+      duration:0.8,
+      staggerChildren:5.0
+    }
+  }
+}
+
 const Hero = () => {
   return (
     <div className="hero">
@@ -66,16 +80,14 @@ const Hero = () => {
           <motion.div variants={textVariants} className="career text-6xl min-h-32 font-bold">
             <TextAnimation/>
           </motion.div>
-          {/* <motion.div variants={textVariants} className="desc">
-            <p>Passionate, adaptable learner with expertise in Object-Oriented Programming, Data Structures, and Algorithms. Dedicated to agile project collaboration and committed to delivering quality results. Actively seeks growth opportunities.</p>
-          </motion.div> */}
-          <motion.div variants={textVariants} className="button-section flex gap-2">
-            <motion.button variants={textVariants} className='styleBtn'>Contact</motion.button>
-            <motion.button variants={textVariants} className=''>
-              <img src="./icons/scroll.svg" alt=""/>
-            </motion.button>
-          </motion.div>
+          <div className="badges flex gap-2" variants={badgeVariants}>
+            <motion.div initial="initial" animate="animate" variants={badgeVariants} className="badge rounded-md bg-pink-300 text-black px-2 py-1">Full-stack</motion.div>
+            <motion.div initial="initial" animate="animate" variants={badgeVariants} className="badge rounded-md bg-blue-300 text-black px-2 py-1">Frontend</motion.div>
+            <motion.div initial="initial" animate="animate" variants={badgeVariants} className="badge rounded-md bg-green-300 text-black px-2 py-1">Backend</motion.div>
+            <motion.div initial="initial" animate="animate" variants={badgeVariants} className="badge rounded-md bg-yellow-300 text-black px-2 py-1">Web Development</motion.div>
+          </div>
         </motion.div>
+        
         
         {/* image section + logos */}
         <div className="img-section md:col-span-1  mt-10 md:mt-0 md:mb-20 relative mr-1">

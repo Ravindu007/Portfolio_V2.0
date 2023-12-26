@@ -67,6 +67,16 @@ const Contact = () => {
     hoverIcon:{
       scale:0.75
     },
+    scrollInitial:{
+      y:0
+    },
+    scrollToTop:{
+      y:5,
+      transition:{
+        repeat:"Infinity",
+        duration:0.5
+      }
+    }
   }
 
 
@@ -122,6 +132,19 @@ const Contact = () => {
           </form>
 
         </motion.div>
+      </div>
+      <div className="row flex justify-end">
+        <motion.button 
+          className='fixed bottom-0 right-0' 
+          onClick={()=>{
+          window.scrollTo({top: 0, behavior: 'smooth'});
+          }}
+          variants={variants}
+          initial="scrollInitial"
+          animate="scrollToTop"
+        >
+          <img src="./icons/scroll.png" className='p-2' alt="" />
+        </motion.button>
       </div>
     </div>
   )

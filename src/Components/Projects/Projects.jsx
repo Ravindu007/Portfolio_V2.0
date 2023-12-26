@@ -55,11 +55,11 @@ const Projects = () => {
   const variants = {
     initial: {
       opacity: 0,
-      y: 100,
+      y: 0,
     },
     animate: {
       opacity: 1,
-      y: -60,
+      y: 10,
       transition: {
         duration:0.3,
         staggerChildren:0.1
@@ -68,8 +68,11 @@ const Projects = () => {
   };
 
   return (
-      <motion.div className="grid grid-cols-3 mx-0 mt-16 md:mt-20 pt-20 mb-5 w-full"  variants={variants} initial="initial" whileInView="animate">
-
+    <div className="projects">
+      <div className="row flex justify-center text-4xl font-bold tracking-widest underline underline-offset-8">
+        <h1>Projects</h1>
+      </div>
+      <motion.div className="grid grid-cols-3 mx-0 mt-16 md:mt-0 pt-2 mb-5 w-full"  variants={variants} initial="initial" whileInView="animate">
         {projects.map((project) => (
           // column
           <div key={project.id} className="col-span-3 md:col-span-1 flex justify-center">
@@ -78,7 +81,8 @@ const Projects = () => {
           </div>
         ))}
 
-      </motion.div>
+        </motion.div>
+    </div>
   );
 };
 

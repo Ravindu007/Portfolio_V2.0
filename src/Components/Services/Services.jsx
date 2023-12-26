@@ -51,6 +51,11 @@ const Services = () => {
 
   return (
     <div className='services'>
+
+      <div className="row flex justify-center text-4xl font-bold tracking-widest underline underline-offset-8">
+          <h1>Services For You</h1>
+      </div>
+
       <div className="grid grid-cols-3 m-5">
 
         {services.map((service) => (

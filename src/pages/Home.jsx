@@ -7,31 +7,35 @@ import Education from '../Components/Education/Education'
 import Certiificates from '../Components/Certificats/Certiificates'
 import Services from '../Components/Services/Services'
 import Contact from '../Components/Contact/Contact'
+import Footer from '../Components/Footer/Footer'
 
 
 const Home = () => {
   return (
     <div className='px-5'>
-      <div className="section">
+      <div className="section" id='hero'>
         <Hero/>
       </div>
-      <div className="section">
+      <div className="section" id='skills'>
         <Skills/>
       </div>
-      <div className="section">
+      <div className="section" id='projects'>
         <Projects/>
       </div>
-      <div className="section">
+      <div className="section" id='education'>
         <Education/>
       </div>
-      <div className="section">
+      <div className="section" id='certificates'>
         <Certiificates/>
       </div>
-      <div className="section">
+      <div className="section" id='services'>
         <Services/>
       </div>
-      <div className="section">
+      <div className="section" id='contact'>
         <Contact/>
+      </div>
+      <div className="section" id=''>
+        <Footer/>
       </div>
     </div>
   )
