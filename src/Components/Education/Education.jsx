@@ -45,8 +45,8 @@ const Education = () => {
     {id:2,logo:"./logos/susl.png", name:"Sabaragamuwa University", desc:"CGPA: 3.9523"},
   ])
   return (
-    <div className='mt-20'>
-      <div className="row flex justify-center text-4xl font-bold tracking-widest underline underline-offset-8 mb-4">
+    <div className='mt-20 mb-12'>
+      <div className="row flex justify-center text-4xl font-bold tracking-widest underline underline-offset-8 mb-10">
           <h1>Education</h1>
       </div>
       <div className="grid grid-cols-2 gap-4">
@@ -60,8 +60,8 @@ const Education = () => {
               {/* text */}
               <div className="grid grid-cols-3 px-2">
                 <motion.div className="col-span-2 flex flex-col justify-center items-center text-xl font-semibold" variants={cardVariants}>
-                  <motion.h1 variants={cardVariants} initial="textInitial" whileInView="textAnimate">{institute.name}</motion.h1>
-                  <motion.p variants={cardVariants} initial="textInitial" whileInView="textAnimate">{institute.desc}</motion.p>
+                  <motion.h1 className='text-left' variants={cardVariants} initial="textInitial" whileInView="textAnimate">{institute.name}</motion.h1>
+                  <motion.p className='text-center text-sm' variants={cardVariants} initial="textInitial" whileInView="textAnimate">{institute.desc}</motion.p>
                 </motion.div>
                 <motion.div className="col-span-1 flex items-center" variants={cardVariants} initial="logoInitial" whileInView="logoAnimation">
                   <img src={institute.logo} className='border-full'/>

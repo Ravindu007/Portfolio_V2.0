@@ -24,9 +24,9 @@ const Nabar = () => {
         <motion.span
           className='hidden md:block'
           initial={{opacity:0, scale:1}}
-          transition={{duration:0.5}}
-          whileInView={{opacity:1, scale:1}}
-        >Ravindu</motion.span>
+          transition={{duration:1.5, repeat:"Infinity"}}
+          animate={{opacity:1, scale:1}}
+        ><img src="./icons/brand.png" width={50} alt="" /></motion.span>
         <div className="social pl-20 md:pl-0">
           <a href="https://www.linkedin.com/in/ravindusd"><img src="./icons/linkedIn.png" alt="" /></a>
           <a href="https://github.com/Ravindu007"><img src="./icons/github.png" alt="" /></a>
