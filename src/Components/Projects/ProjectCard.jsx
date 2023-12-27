@@ -95,7 +95,7 @@ const ProjectCard = ({project, variants}) => {
             <Card.Img src={project.img} className="md:min-h-28 md:max-h-28 md:min-w-52 md:max-w-52" />
             </Card.Body>
           <Card.Footer className="flex gap-3 items-center">
-            <img src="./icons/link.png" alt="" width={15} />
+            <a href={project.github}><img src="./icons/link.png" alt="" width={15} /></a>
             <button className="styleBtn" onClick={() => setShowModal(true)}>
                 VIEW
               </button>
