@@ -28,10 +28,10 @@ const Nabar = () => {
           whileInView={{opacity:1, scale:1}}
         >Ravindu</motion.span>
         <div className="social pl-20 md:pl-0">
-          <a href=""><img src="./icons/linkedIn.png" alt="" /></a>
-          <a href=""><img src="./icons/github.png" alt="" /></a>
-          <a href=""><img src="./icons/fb.png" alt="" /></a>
-          <a href=""><img src="./icons/twitter.png" alt="" /></a>
+          <a href="https://www.linkedin.com/in/ravindusd"><img src="./icons/linkedIn.png" alt="" /></a>
+          <a href="https://github.com/Ravindu007"><img src="./icons/github.png" alt="" /></a>
+          <a href="facebook.com/ravindusandaruwan.dharmadasa.7"><img src="./icons/fb.png" alt="" /></a>
+          <a href="https://medium.com/@ravindusandaruwandh"><img src="./icons/medium.png" alt="" /></a>
         </div>
       </div>
     </div>

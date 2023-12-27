@@ -5,10 +5,10 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
 
   const [social, setSocial] = useState([
-    {id:1, link:"", logo:"./icons/linkedIn.png"},
-    {id:2, link:"", logo:"./icons/github.png"},
-    {id:3, link:"", logo:"./icons/fb.png"},
-    {id:4, link:"", logo:"./icons/twitter.png"}
+    {id:1, link:"https://www.linkedin.com/in/ravindusd", logo:"./icons/linkedIn.png"},
+    {id:2, link:"https://github.com/Ravindu007", logo:"./icons/github.png"},
+    {id:3, link:"facebook.com/ravindusandaruwan.dharmadasa.7", logo:"./icons/fb.png"},
+    {id:4, link:"https://medium.com/@ravindusandaruwandh", logo:"./icons/medium.png"}
   ])
 
   const form = useRef();

@@ -33,7 +33,10 @@ const Certiificates = () => {
 
   return (
     <div className='flex flex-col py-10'>
-        <div className='mt-5 grid grid-cols-3 py-16 px-20'>
+      <div className="row flex justify-center text-4xl font-bold tracking-widest underline underline-offset-8 mb-0">
+          <h1>Certifications</h1>
+      </div>
+        <div className='mt-0 grid grid-cols-3 py-5 px-20'>
 
         {certificates.map((certificate) => (
           <div className="col-span-3 md:col-span-1">

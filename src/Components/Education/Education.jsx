@@ -41,13 +41,13 @@ const cardVariants = {
 const Education = () => {
 
   const [education, setEducation] = useState([
-    {id:1,logo:"./logos/ananda.png", name:"Ananda College", desc:"G.C.E. (A/Ls): B,C,C"},
+    {id:1,logo:"./logos/ananda.png", name:"Ananda College", desc:"G.C.E. (A/Ls) & G.C.E. (O/Ls)"},
     {id:2,logo:"./logos/susl.png", name:"Sabaragamuwa University", desc:"CGPA: 3.9523"},
   ])
   return (
     <div className='mt-20'>
       <div className="row flex justify-center text-4xl font-bold tracking-widest underline underline-offset-8 mb-4">
-          <h1>Education & Certifications</h1>
+          <h1>Education</h1>
       </div>
       <div className="grid grid-cols-2 gap-4">
         
