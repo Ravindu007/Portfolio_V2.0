@@ -9,6 +9,7 @@ const Certiificates = () => {
     {id:3, img:"./certifications/c3.png"},
     {id:4, img:"./certifications/c4.png"},
     {id:5, img:"./certifications/c5.png"},
+    {id:5, img:"./certifications/c6.png"},
   ])
 
   const cardVariants = {
