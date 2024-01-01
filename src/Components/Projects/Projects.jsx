@@ -15,10 +15,11 @@ const Projects = () => {
     ], github: 'https://github.com/Ravindu007/TaskCraft' },
 
     { id: 2, name: 'Easy Proof', desc: 'A web application that ensures the authenticity of a product by saving product details in a blockchain and allowing QR scan functionality to check authenticity', img: './projects/easy.png', techsUsed:[
-      {id:1, techName:"ASP.NET", logo:"./programming/csharp.svg"},
-      {id:2, techName:"Angular", logo:"./programming/angular.svg"},
-      {id:3, techName:"MySQL", logo:"./programming/mysql.svg"},
-      {id:4, techName:"Git", logo:"./programming/git.svg"},
+      {id:1, techName:"React", logo:"./programming/react.svg"},
+      {id:2, techName:"Node.js", logo:"./programming/node.svg"},
+      {id:3, techName:"Express.js", logo:"./programming/express.svg"},
+      {id:4, techName:"MongoDB", logo:"./programming/mongodb.svg"},
+      {id:5, techName:"Git", logo:"./programming/git.svg"},
     ], github: 'https://github.com/Ravindu007/EasyProof-Frontend' },
 
 
