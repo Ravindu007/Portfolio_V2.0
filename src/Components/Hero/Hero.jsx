@@ -64,7 +64,7 @@ const Hero = () => {
     <div className="hero">
       <Navbar/>
 
-      <div className="grid md:grid-cols-3 h-[93vh]">
+      <div className="grid md:grid-cols-3 h-[93vh] pl-[20px]">
 
         {/* text section */}
         <motion.div 
