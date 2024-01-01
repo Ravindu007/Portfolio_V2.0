@@ -7,8 +7,8 @@ const Certiificates = () => {
     {id:1, img:"./certifications/c1.png"},
     {id:2, img:"./certifications/c2.png"},
     {id:3, img:"./certifications/c3.png"},
-    {id:4, img:"./certifications/c1.png"},
-    {id:5, img:"./certifications/c2.png"},
+    {id:4, img:"./certifications/c4.png"},
+    {id:5, img:"./certifications/c5.png"},
   ])
 
   const cardVariants = {
