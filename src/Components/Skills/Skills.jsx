@@ -14,7 +14,8 @@ const Skills = () => {
   const [backendTechs, setBackendTechs] = useState([
     {id:1, name:"Node.js", img:"./programming/node.svg"},
     {id:2, name:"Express.js", img:"./programming/express.svg"},
-    {id:3, name:"PHP", img:"./programming/php.svg"},
+    {id:3, name:"ASP .NET", img:"./programming/dotnet.png"},
+    {id:4, name:"PHP", img:"./programming/php.svg"},
   ])
 
   const [programingLanguages, setProgramingLanguages] = useState([
