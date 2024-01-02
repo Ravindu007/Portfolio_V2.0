@@ -20,7 +20,7 @@ const Projects = () => {
       {id:3, techName:"Express.js", logo:"./programming/express.svg"},
       {id:4, techName:"MongoDB", logo:"./programming/mongodb.svg"},
       {id:5, techName:"Git", logo:"./programming/git.svg"},
-    ], github: 'https://github.com/Ravindu007/EasyProof-Frontend' },
+    ], github: 'https://github.com/Ravindu007/SkillSync' },
     
     { id: 3, name: 'Easy Proof', desc: 'A web application that ensures the authenticity of a product by saving product details in a blockchain and allowing QR scan functionality to check authenticity', img: './projects/easy.png', techsUsed:[
       {id:1, techName:"React", logo:"./programming/react.svg"},
