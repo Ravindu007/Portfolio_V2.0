@@ -9,7 +9,7 @@ const Certiificates = () => {
     {id:3, img:"./certifications/c3.png"},
     {id:4, img:"./certifications/c4.png"},
     {id:5, img:"./certifications/c5.png"},
-    {id:5, img:"./certifications/c6.png"},
+    {id:6, img:"./certifications/c6.png"},
   ])
 
   const cardVariants = {
@@ -40,7 +40,7 @@ const Certiificates = () => {
         <div className='mt-0 grid grid-cols-3 py-5 px-20'>
 
         {certificates.map((certificate) => (
-          <div className="col-span-3 md:col-span-1">
+          <div className="col-span-3 md:col-span-1" key={certificate.id}>
             <motion.div variants={cardVariants} className="flex justify-center items-center p-2">
               <motion.img src={certificate.img} alt="" variants={cardVariants} initial="initial" whileInView="animate"  whileHover="tap" className='w-full md:w-[60%] mx-5 my-5'/>
               </motion.div>

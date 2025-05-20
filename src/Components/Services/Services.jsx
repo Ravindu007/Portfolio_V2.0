@@ -21,7 +21,7 @@ const cardVariants = {
   },
   logoInitial:{
     opacity:0,
-    x:15
+    x:0
   },
   logoAnimate:{
     opacity:1,
@@ -59,7 +59,7 @@ const Services = () => {
       <div className="grid grid-cols-3 m-5">
 
         {services.map((service) => (
-          <div className="col-span-3 md:col-span-1 rouded-md  shadow-2xl shadow-primary mx-2 px-5 py-2">
+          <div key={service.id} className="col-span-3 md:col-span-1 rouded-md  shadow-2xl shadow-primary mx-2 px-5 py-2">
             <div className="title-section flex justify-center text-xl font-bold underline underline-offset-4">{service.name}</div>
             <motion.div className="img-section flex justify-center items-center" variants={cardVariants} initial="initialImage" whileInView="animateImage">
               <img src={service.img} alt="" width={300}/>

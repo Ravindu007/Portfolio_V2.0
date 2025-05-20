@@ -6,7 +6,7 @@ import './Hero.scss'
 
 const imageVariants = {
   initial:{
-    x:100,
+    x:0,
     scale:0.8
   },
   visible:{

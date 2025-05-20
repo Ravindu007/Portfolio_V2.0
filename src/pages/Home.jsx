@@ -8,6 +8,8 @@ import Certiificates from '../Components/Certificats/Certiificates'
 import Services from '../Components/Services/Services'
 import Contact from '../Components/Contact/Contact'
 import Footer from '../Components/Footer/Footer'
+import WorkExperience from '../Components/WorkExperience/WorkExperience'
+import Achievements from '../Components/Achievements/Achievements'
 
 
 const Home = () => {
@@ -16,11 +18,17 @@ const Home = () => {
       <div className="section" id='hero'>
         <Hero/>
       </div>
+      <div className='section' id='work'>
+        <WorkExperience/>
+      </div>
       <div className="section" id='skills'>
         <Skills/>
       </div>
       <div className="section" id='projects'>
         <Projects/>
+      </div>
+      <div className='section' id='achievements'>
+        <Achievements/>
       </div>
       <div className="section" id='education'>
         <Education/>

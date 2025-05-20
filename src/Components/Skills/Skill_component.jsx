@@ -7,7 +7,7 @@ const Skill_component = ({Techs:frontendTechs, variants, techStack}) => {
     <div className="col-span-4 md:col-span-1 px-10">
     <h1 className='text-2xl flex justify-center py-4'>{techStack}</h1>
       {frontendTechs.map((tech)=>(
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2" key={tech.id}>
           {tech.id % 2 == 0 
             ? 
               <motion.div variants={variants} initial="initialLeft" whileInView="animateLeft" className='col-span-1 flex flex-col items-center'>

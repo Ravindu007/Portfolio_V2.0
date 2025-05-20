@@ -38,7 +38,7 @@ const Contact = () => {
   const variants = {
     inputInitial:{
       opacity:0,
-      x:100,
+      x:0,
     },
     inputAnimate:{
       opacity:1,

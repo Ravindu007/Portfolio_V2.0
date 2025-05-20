@@ -26,7 +26,7 @@ const cardVariants = {
     }
   },
   textInitial:{
-    x:-100
+    x:0
   },
   textAnimate:{
     x:0,
@@ -52,7 +52,7 @@ const Education = () => {
       <div className="grid grid-cols-2 gap-4">
         
         {education.map((institute)=>(
-        <div className="col-span-2 md:col-span-1 flex justify-center">
+        <div className="col-span-2 md:col-span-1 flex justify-center" key={institute.id}>
 
             {/* Edication card */}
             <motion.div className="card box-border bg-white text-black shadow-sm shadow-gray-400 w-4/5 h-auto rounded-md flex justify-center" variants={cardVariants} initial="leftinitialCard" whileInView="leftanimateCard">

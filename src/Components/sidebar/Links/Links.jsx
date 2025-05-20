@@ -29,7 +29,7 @@ const Links = ({open}) => {
       animate={open? "visible": "hidden"}
     >
       {items.map((item)=>(
-        <motion.a whileHover={{scale:1.1}} whileTap={{scale:0.95}} key={item} href={`#${item.link}`}>{item.name}</motion.a>
+        <motion.a whileHover={{scale:1.1}} whileTap={{scale:0.95}} key={item.id} href={`#${item.link}`}>{item.name}</motion.a>
       ))}
     </motion.div>
   )
